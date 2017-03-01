@@ -65,11 +65,17 @@ gulp.task('css-libs', ['sass'], function() {
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('app/css'));
 });
-gulp.task('scripts', function() {
+gulp.task('scripts', ['html5shiv'], function() {
     return gulp.src('app/libs/main.js')
         .pipe(rigger())
         .pipe(uglify())
         .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('app/js'));
+});
+gulp.task('html5shiv', function () {
+    return gulp.src('app/libs/html5shiv/dist/*.min.js')
+        .pipe(concat('html5shiv.js'))
+        .pipe(uglify())
         .pipe(gulp.dest('app/js'));
 });
 gulp.task('browser-sync', function() {
