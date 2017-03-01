@@ -1,0 +1,71 @@
+article{
+  .aboutus{
+    padding: 25px 0;
+    box-sizing: border-box;
+
+  }
+  .img {
+      padding: 0;
+      div{
+        float: right;
+        margin: 0;
+        overflow: hidden;
+        text-align: center;
+        display: block;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+          img{
+            width: 135px;
+            height: 135px;
+      }
+    }
+  }
+  .text{
+    padding: 36px 0;
+    p{
+      text-align: justify;
+      line-height: 1.6;
+      color: $primary_text_color;
+    }
+  }
+  h2{
+    color: $primary_text_color;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 2.0;
+    margin: 40px auto 0;
+  }
+  .incubator{
+    margin: 40px 0;
+    padding: 150px 0;
+    box-sizing: border-box;
+    background: url("../img/count.png");
+    background-position: center;
+    position: relative;
+    .count-time > div{
+      color: $F;
+      box-sizing: border-box;
+      border-radius: 4px;
+      p{
+        font-family: 'Poiret One', cursive;
+        font-size: 18px;
+        font-weight: 700;
+        font-style: italic;
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .gallery{
+    .container-items{
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      .gallery-item{
+        margin: 15px 0 0;
+        overflow: hidden;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

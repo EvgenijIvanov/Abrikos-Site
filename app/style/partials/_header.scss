@@ -1,0 +1,65 @@
+header{
+  color: $F;
+  h1,h2{
+    color: $F;
+  }
+  p{
+    color: $F;
+    margin: 50px 0 0;
+  }
+}
+
+.logo{
+  padding: 25px 0;
+  text-align: center;
+}
+.logo > span:last-of-type{
+  color: $secondary_color_blue;
+  margin-left: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: italic;
+
+}
+.logo h1{
+  display: inline-block;
+  position: relative;
+}
+.logo h1 span{
+  font-family: 'Lobster', cursive;
+  color: $primary_color_orange;
+  font-size: 65px;
+}
+.banner{
+  max-width: 1200px;
+  min-height: 575px;
+  background: url("../img/test.png");
+  background-size: cover;
+  background-position: center;
+}
+.banner > h2, .banner > p{
+  margin: 0 auto;
+  max-width: 480px;
+  line-height: 1.6;
+  position: relative;
+  z-index: 4;
+}
+.banner > h2{
+  margin-top: 200px;
+  font-size: 38px;
+}
+.banner > p{
+  margin-top: 50px;
+  font-family: 'Poiret One', cursive;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 500;
+}
+.left-logo-img{
+  position: absolute;
+  left: 225px;
+}
+.right-logo-img{
+  position: absolute;
+  right: 225px;
+}
