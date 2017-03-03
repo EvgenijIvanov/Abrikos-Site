@@ -1,8 +1,6 @@
 article{
   .aboutus{
-    padding: 25px 0;
     box-sizing: border-box;
-
   }
   .img {
       padding: 0;
@@ -22,7 +20,7 @@ article{
     }
   }
   .text{
-    padding: 36px 0;
+    padding: 0 15px;
     p{
       text-align: justify;
       line-height: 1.6;
@@ -34,10 +32,9 @@ article{
     letter-spacing: 1px;
     text-transform: uppercase;
     line-height: 2.0;
-    margin: 40px auto 0;
+    margin: 50px 0;
   }
   .incubator{
-    margin: 40px 0;
     padding: 150px 0;
     box-sizing: border-box;
     background: url("../img/count.png");
@@ -62,9 +59,142 @@ article{
       display: block;
       margin: 0 auto;
       .gallery-item{
-        margin: 15px 0 0;
+        padding: 15px;
         overflow: hidden;
         box-sizing: border-box;
+        .gallery-item-img{
+          .blind{
+            display: none;
+            .open-gallery{
+              color: rgba($F, 0.5);
+              font-size: 48px;
+              z-index: 3;
+              width: 48px;
+              height: 48px;
+              border-radius: 50%;
+              text-align: center;
+              line-height: 30px;
+              position: absolute;
+              top: 50%;
+              left:50%;
+              margin: -24px 0 0 -24px;
+            }
+          }
+          border: 3px solid $primary_bgcolor_orange;
+          position:relative;
+          cursor:pointer;
+          padding: 75px 0;
+          width: 100%;
+          margin: 0;
+          box-sizing: border-box;
+          background: url("../img/galerey.png");
+          background-position: center;
+          background-size: cover;
+          &:hover > div{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .comands {
+    div{
+      color: $primary_text_color;
+      text-align: justify;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+    .row{
+      padding: 15px 0;
+    }
+    .comands-text{
+      background-color: $F;
+      padding: 10px;
+      p{
+        padding: 5px 0;
+        line-height: 1.2;
+        &:first-of-type{
+          color: $secondary_color_blue;
+          border-bottom: 1px dotted $primary_text_color;
+        }
+      }
+    }
+    .comands-img{
+      text-align: center;
+       img{
+         width: 140px;
+         border-radius: 50%;
+       }
+    }
+  }
+  .fon{
+    padding: 75px 0;
+    background: url("../img/fon3.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .contacts{
+    div{
+      box-sizing: border-box;
+      text-align: left;
+    }
+    & > div > div{
+      margin: 20px 0 30px;
+    }
+    input, textarea{
+      font-family: 'Roboto', sans-serif;
+      color: $primary_text_color;
+      box-sizing: border-box;
+      border-radius: 5px;
+      border: 2px solid rgba($primary_text_color, 0.2);
+      margin: 2px 0 8px;
+      font-size: 16px;
+      outline: none;
+      width: 100%;
+      resize: none;
+    }
+    label{
+      color: $primary_color_orange;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    input{
+      padding: 8px 2px;
+    }
+    button{
+      cursor: pointer;
+      text-transform: uppercase;
+      width: 115px;
+      padding: 8px 0;
+      margin: 8px 2px;
+      color: $primary_color_orange;
+      background-color: transparent;
+      border: 2px solid;
+      float: right;
+      box-sizing: border-box;
+      &:first-of-type{
+        margin: 8px 0 8px 2px;
+      }
+      &:hover{
+        border: 2px solid $primary_color_orange;
+        background-color: $primary_bgcolor_orange;
+        color: $F;
+      }
+      &:active{
+        border: 2px solid $F;
+      }
+      &:focus{
+        outline: none;
+      }
+    }
+    span{
+      float: left;
+      width: 16px;
+      margin-right: 15px;
+      text-align: left;
+      color: $primary_color_orange;
+      i{
+        font-size: 20px;
       }
     }
   }
