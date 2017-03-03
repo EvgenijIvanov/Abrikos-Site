@@ -134,6 +134,7 @@ article{
     background-position: center;
   }
   .contacts{
+    margin-bottom: 30px;
     div{
       box-sizing: border-box;
       text-align: left;
@@ -169,7 +170,7 @@ article{
       margin: 8px 2px;
       color: $primary_color_orange;
       background-color: transparent;
-      border: 2px solid;
+      border: 1px solid;
       float: right;
       box-sizing: border-box;
       &:first-of-type{
