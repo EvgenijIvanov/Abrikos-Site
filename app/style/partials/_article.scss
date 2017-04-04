@@ -51,6 +51,15 @@ article{
         font-style: italic;
         margin-bottom: 40px;
       }
+      .time-wrapper{
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        padding: 30px 0;
+        span{
+          font-size: 42px;
+          display: inline-block;
+          margin: 0 15px;
+        }
+      }
     }
   }
   .gallery{
@@ -59,14 +68,19 @@ article{
       display: block;
       margin: 0 auto;
       .gallery-item{
+        position: relative;
         padding: 15px;
         overflow: hidden;
         box-sizing: border-box;
         .gallery-item-img{
+          overflow: hidden;
           .blind{
-            display: none;
+            transition: transform 0.4s ease-in;
+            display: block;
+          }
             .open-gallery{
-              color: rgba($F, 0.5);
+              transition: color 0.4s linear;
+              color: rgba(255,255,255, 0.5);
               font-size: 48px;
               z-index: 3;
               width: 48px;
@@ -79,7 +93,7 @@ article{
               left:50%;
               margin: -24px 0 0 -24px;
             }
-          }
+
           border: 3px solid $primary_bgcolor_orange;
           position:relative;
           cursor:pointer;
@@ -87,16 +101,40 @@ article{
           width: 100%;
           margin: 0;
           box-sizing: border-box;
-          background: url("../img/galerey.png");
           background-position: center;
           background-size: cover;
           &:hover > div{
             display: block;
           }
+          &:hover .blind{
+            transform: translateY(-200px);
+          }
+          &:hover .open-gallery{
+            color: rgba(255,255,255, 1);
+          }
+        }
+        .first{
+          background-image: url("../img/gallery01.png");
+        }
+        .second{
+          background-image: url("../img/gallery02.png");
+        }
+        .third{
+          background-image: url("../img/gallery03.png");
+        }
+        .forthen{
+          background-image: url("../img/gallery04.png");
+        }
+        .five{
+          background-image: url("../img/gallery05.png");
+        }
+        .six{
+          background-image: url("../img/gallery06.png");
         }
       }
     }
   }
+
   .comands {
     div{
       color: $primary_text_color;
