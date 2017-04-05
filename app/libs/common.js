@@ -34,5 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     document.querySelector('.index-menu').addEventListener("click", function () {
         document.querySelector('.back-menu').classList.toggle("back-menu__open");
+        document.querySelectorAll('.icon').forEach(function(item) {
+            item.classList.toggle("open");
+        });
     })
 });
