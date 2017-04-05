@@ -24,8 +24,10 @@
   font-weight: 700;
   text-transform: uppercase;
   color: $F;
+  transition: color 0.2s linear, border 0.2s linear;
 }
 .back-menu ul li a:hover{
+  transition: color 0.2s linear, border 0.2s linear;
   color: $primary_color_orange;
   border-bottom: 2px solid;
 }
@@ -47,6 +49,9 @@
    &:hover{
      box-shadow: 0 0 2px 0 $blind_bdcolor_grey_opacity;
    }
+  }
+  .shadow-open{
+    box-shadow: 0 0 2px 0 $blind_bdcolor_grey_opacity;
   }
  .icon{
    opacity: 0;

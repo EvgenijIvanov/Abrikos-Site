@@ -1,7 +1,7 @@
 /*
  * library
  */
-//= jquery/dist/jquery.min.js
+//  jquery/dist/jquery.min.js
 //  magnific-popup/dist/jquery.magnific-popup.min.js
 //  fancybox/source/jquery.fancybox.pack.js
 //  jquery-mousewheel/jquery.mousewheel.js
