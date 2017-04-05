@@ -220,7 +220,7 @@ header {
 .banner {
   max-width: 1200px;
   min-height: 575px;
-  background: url("../img/test.png");
+  background: url("../img/fon1.png") no-repeat;
   background-size: cover;
   background-position: center; }
 
@@ -288,7 +288,7 @@ article .incubator {
   padding: 150px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url("../img/count.png");
+  background: url("../img/fon2.png");
   background-position: center;
   position: relative; }
   article .incubator .count-time > div {
@@ -478,6 +478,26 @@ article .contacts {
 /* Small Devices, Tablets */
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .banner {
+    background: url("../img/fon1-mobile.png") no-repeat;
+    background-size: cover;
+    min-height: 236px; }
+    .banner h2 {
+      margin-top: 60px;
+      font-size: 26px; }
+    .banner p {
+      display: none; }
+  .incubator {
+    background: url("../img/fon2-mobile.png") no-repeat !important;
+    background-size: cover !important;
+    padding: 25px 0 !important; }
+    .incubator .time-wrapper .hours {
+      display: none !important; }
+    .incubator .time-wrapper .minutes {
+      display: none !important; }
+  .fon {
+    background: #e67e30 !important;
+    padding: 15px 0 !important; }
   .gallery-item .gallery-item-img {
     padding: 50px 0 !important; } }
 

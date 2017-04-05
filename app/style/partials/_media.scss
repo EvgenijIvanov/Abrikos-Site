@@ -17,6 +17,36 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+  .banner{
+    background: url("../img/fon1-mobile.png") no-repeat;
+    background-size: cover;
+    min-height: 236px;
+    h2{
+      margin-top: 60px;
+      font-size: 26px
+    }
+    p{
+      display: none;
+    }
+  }
+  .incubator{
+    background: url("../img/fon2-mobile.png") no-repeat !important;
+    background-size: cover !important;
+    padding: 25px 0 !important;
+    .time-wrapper {
+      .hours{
+        display: none !important;
+      }
+      .minutes{
+        display: none !important;
+      }
+    }
+  }
+  .fon{
+    background: $primary_color_orange !important;
+    padding: 15px 0 !important;
+  }
+
   .gallery-item{
     .gallery-item-img{
       padding: 50px 0 !important;
