@@ -40,11 +40,15 @@ article{
     background: url("../img/fon2.png");
     background-position: center;
     position: relative;
+        h3{
+          font-size: 42px;
+        }
     .count-time > div{
       color: $F;
       box-sizing: border-box;
       border-radius: 4px;
       p{
+        line-height: 1.2;
         font-family: 'Poiret One', cursive;
         font-size: 18px;
         font-weight: 700;
@@ -215,12 +219,12 @@ article{
         margin: 8px 0 8px 2px;
       }
       &:hover{
-        border: 2px solid $primary_color_orange;
+        border: 1px solid $primary_color_orange;
         background-color: $primary_bgcolor_orange;
         color: $F;
       }
       &:active{
-        border: 2px solid $F;
+        border: 1px solid $F;
       }
       &:focus{
         outline: none;
