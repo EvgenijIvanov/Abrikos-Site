@@ -156,8 +156,16 @@ article{
         padding: 5px 0;
         line-height: 1.2;
         &:first-of-type{
+          position: relative;
           color: $secondary_color_blue;
           border-bottom: 1px dotted $primary_text_color;
+          span{
+            font-style: italic;
+            color: $primary_color_orange;
+            position: absolute;
+            right: 0;
+            top: 3px;
+          }
         }
       }
     }

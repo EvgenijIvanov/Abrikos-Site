@@ -55,6 +55,7 @@ gulp.task('sass', function () {
         .pipe(gulpif(isDevelopment, sourcemap.init()))
         .pipe(sass())
         .pipe(autoprefixer(['last 15 versions', '> 1%','ie 9', 'ie 8', 'ie 7','safari 5', 'opera 12.1', 'ios 6', 'android 4'], {cascade: true}))
+        .pipe(cssnano())
         .pipe(gulpif(isDevelopment, sourcemap.write('.')))
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({stream: true}))
