@@ -1,11 +1,6 @@
-//fonts
-@import url('https://fonts.googleapis.com/css?family=Lobster|Poiret+One|Roboto:400,400i');
-//partials
-@import "partials/base";
-@import "partials/back-menu";
-@import "partials/popap";
-@import "partials/header";
-@import "partials/article";
-@import "partials/footer";
-//media
-@import "partials/media";
+//@import "../libs/magnific-popup/dist/magnific-popup";
+@import "../libs/bootstrap-grid/css/bootstrap-grid";
+@import "../fonts/font-awesome.min";
+//@import "../libs/fancybox/source/jquery.fancybox";
+//@import "../libs/owl-carousel/owl-carousel/owl.carousel";
+@import "custom";
